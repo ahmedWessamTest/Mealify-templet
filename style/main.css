@@ -224,26 +224,32 @@ a {
     visibility: hidden;
     z-index: 1000;
     position: fixed;
-    top: 14.5%;
+    top: 0;
     left: 0;
+    bottom: 0;
+    right: 0;
     width: 100%;
-    height: 100vh;
 }
 
 .side-navbar .layer {
-    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    top: 89px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
     background-color: rgba(250,250,250,0.7);
 }
 .side-navbar .layer .nav-content .right-content {
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 100vh;
     background-color: #fff;
     padding: 15px;
     position: absolute;
     right: 0;
     top: 0;
+    bottom: 0;
     transform: translateX(100%);
     transition: transform 0.5s;
 }
